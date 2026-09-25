@@ -15,7 +15,8 @@ D-Pad Down / Cross     Duck, climb down
 Square                 Step, grab ledges, swing the sword
 Start / Select         Pause menu (settings, save and load, restart level)
 
-Hold Start + Select to leave the game (on the console, the Pi and the PC stick).
+To leave the game: press Reset on the console, or hold Start + Select (the console, the Pi and the PC
+stick). On Windows: Start or Select for the pause menu, then Quit Game.
 The pause menu's settings are saved to SDLPoP.cfg in this folder, next to your saved games.
 
 
