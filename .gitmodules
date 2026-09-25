@@ -1,0 +1,3 @@
+[submodule "upstream/SDLPoP"]
+	path = upstream/SDLPoP
+	url = https://github.com/NagyD/SDLPoP.git
