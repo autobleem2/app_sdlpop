@@ -28,7 +28,7 @@ one follows. It replaces the RetroBoot 1.2 binary (genderbent's 2019 PSC build, 
 | `patches/SDLPoP/0001-psc-settings.patch` | `SDLPoP.ini`: the 2020 PSC port's settings - full screen at 1280x720, `use_correct_aspect_ratio`, `scaling_type = fuzzy`, both stick axes, no info screen |
 | `resources/` | `app.ini` (`Exec=bin/{key}/prince`, no `Args`, no `Lib`, no `Startup=` - the launcher's `rc/app_run.sh` starts it in the App's folder), `readme.txt`, `icon.png` (the 2020 package's) |
 | `ci/build.sh` | `native|psc|rpi|rpi64|pcusb|win|all` in the autobleem-build image: upstream's `src/Makefile` with `CC`, `BIN`, `CFLAGS` and `LIBS` on its command line; Windows adds upstream's `icon.rc` |
-| `tools/check_psc_binary.sh`, `tools/check_needed.sh` | as in app_opentyrian (the latter allows the launcher's whole SDL2 family on Windows) |
+| `/opt/ab/tools/check_psc_binary.sh`, `/opt/ab/tools/check_needed.sh` (autobleem-build image) | no longer vendored (APPS-6) - as in app_opentyrian (the latter allows the launcher's whole SDL2 family on Windows) |
 | `tools/store_item.py` | a package -> `dist/store/<key>/` with `sdlpop.item.json` and `sdlpop.png`, for autobleem-repo's `repo_publish.sh store <key> dist/store/<key>/*` |
 
 ## Things to know

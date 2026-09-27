@@ -138,14 +138,14 @@ check() { # check <key>: what the program needs, and that it is what the platfor
     case "$key" in
         psc)
             file "$stage/bin/psc/prince" | grep -q 'ELF 32-bit LSB.*ARM'
-            bash tools/check_psc_binary.sh "$stage/bin/psc/prince" "$PSC" ;;
+            bash /opt/ab/tools/check_psc_binary.sh "$stage/bin/psc/prince" "$PSC" ;;
         rpi) file "$stage/bin/rpi/prince" | grep -q 'ELF 32-bit LSB.*ARM' ;;
         rpi64) file "$stage/bin/rpi64/prince" | grep -q 'ELF 64-bit LSB.*aarch64' ;;
         pcusb) file "$stage/bin/pcusb/prince" | grep -q 'ELF 32-bit LSB.*Intel 80386' ;;
         win) file "$stage/bin/win/prince.exe" | grep -q 'PE32+ executable.*x86-64' ;;
     esac
     # nothing but the base system and the SDL2 family
-    bash tools/check_needed.sh "$key" "$stage"
+    bash /opt/ab/tools/check_needed.sh "$key" "$stage"
 }
 
 build_native() {
