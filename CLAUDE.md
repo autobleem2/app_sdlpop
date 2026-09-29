@@ -38,7 +38,7 @@ one follows. It replaces the RetroBoot 1.2 binary (genderbent's 2019 PSC build, 
   `QUICKSAVE.SAV`), the hall of fame and `SDLPoP.cfg` (the pause menu's settings, which win over the ini) are
   all in the App's folder. A Store update lays the package over it and leaves the saves and `SDLPoP.cfg` alone.
 - **SDL**: nothing newer than SDL 2.0.5 is used unguarded (`SDL_RenderSetIntegerScale` is behind
-  `SDL_VERSION_ATLEAST`), so the console's 2.0.14 runs it.
+  `SDL_VERSION_ATLEAST`), so the console's SDL2 - `autobleem_sdl` 2.0.18, was upstream 2.0.14 until 2026-09-29 - runs it.
 - **Windows**: SDLPoP includes `<SDL2/SDL.h>`, so the MinGW build needs both `/opt/mingw-sdl2/include` and
   `.../include/SDL2`. Run on the dev PC on 2026-09-25 with only the Windows product's official SDL DLLs on PATH
   and the App folder as the working directory: it starts full screen, window title "Prince of Persia (SDLPoP)
